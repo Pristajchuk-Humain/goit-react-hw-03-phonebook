@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import s from './Header.module.css'; 
 import PropTypes from 'prop-types';
 
-class Header  extends Component {
-    render(){
-        const { title } = this.props;
-        return (
+const Header = ({title}) => {
+   return (
           <h1 className={s.title}>{title}</h1>
         );
-    };
+}
+   
+       // const { title } = this.props;
+      //  return (
+      //    <h1 className={s.title}>{title}</h1>
+      //  );
+   // };
 
-};
+//};
+ 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
 };

@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-class Filter extends Component {
-  render() {
-    const { value, onChange } = this.props;
-    return (
+const Filter = ({value, onChange}) => {
+     return (
       <label>
         Find contacts by name
         <input
@@ -17,10 +15,12 @@ class Filter extends Component {
           required
         />
       </label>
-    );
-  }
+    )
 }
+  
+    //const { value, onChange } = this.props;
 
+  
 Filter.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
