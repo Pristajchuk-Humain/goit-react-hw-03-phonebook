@@ -11,8 +11,8 @@
 }
 
 .name {
-  color: #333232;
   font-weight: 500;
+ color: red;
 }
 
 .number {
