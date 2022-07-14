@@ -8,14 +8,6 @@ const Header = ({title}) => {
         );
 }
    
-       // const { title } = this.props;
-      //  return (
-      //    <h1 className={s.title}>{title}</h1>
-      //  );
-   // };
-
-//};
- 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
 };
